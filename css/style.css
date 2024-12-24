@@ -55,7 +55,7 @@ nav> .headLink>li:hover{
     border: 3px solid white;
 }
 
-@media (max-width:410px){
+@media (max-width:430px){
     nav{
         display: grid;
         grid-template-rows: auto auto;
