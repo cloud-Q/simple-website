@@ -7,21 +7,32 @@
 body{
     background-color: whitesmoke;
 }
-@media (max-width:530px) {
-    nav >  img{
-        display: none;
-    }
-}
+
 /* Navigation bar styling */
-nav >  img{
+nav{
+    display: grid;
+    grid-template-columns: 5% auto;
+    height: 80px;
+    background-color: #B3B4BD;
+}
+.headLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+}
+
+nav >.headlogo>  img{
     height: 60px;
     width: 80px;
-    position: absolute;
-    left: 30px;
-
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 45%;
+    margin-top: 14%;
 }
 
-nav > li > a{
+nav >.headLink> li > a{
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
@@ -29,7 +40,7 @@ nav > li > a{
     /* color: #141619; */
     /* color: #050A44; */
 }
-nav> li{
+nav>.headLink> li{
     list-style: none;
     height: max-content;
     min-width: max-content;
@@ -38,28 +49,43 @@ nav> li{
     border-radius: 50px;
 }
 
-nav{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10%;
-    background-color: #B3B4BD;
-    /* box-sizing: content-box; */
-}
 
-nav> li:hover{
+
+nav> .headLink>li:hover{
     border: 3px solid white;
 }
 
-@media (max-width:280px){
+@media (max-width:410px){
     nav{
+        display: grid;
+        grid-template-rows: auto auto;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+    nav > .headLink{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
         display: flex;
         flex-direction: column;
-        height: 200px;
+        gap: 10px;
+    }
+    nav >.headlogo>  img{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        position: relative;
+        
     }
     
+}
+@media (max-width:530px) {
+    nav >  img{
+        display: none;
+    }
 }
 
 /* heading and short discription */
