@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- code links for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .formSec{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgba(255, 255, 255, 0.432); */
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        } 
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* box-shadow: 0 -0.3em 0.5em rgba(30, 32, 30, 0.454); */
+            background-color: #B3B4BD;
+            border-radius: 10px;
+            width:max-content;
+            padding: 5%;
+            margin-top: 5%;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px
+        }
+        #btn{
+            background-color:#141619;
+            color: black;
+            padding: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bolder;
+            color: white;
+            border-radius: 10px;
+        }
+        #btn:hover{
+            border: 2px solid white;
+        }
+        .message{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="images/Construction-logo-design-on-transparent-background-PNG.png" alt="logo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </nav>
+<section class="formSec">
+    <div class="form">
+    <h1>Contact Form</h1>
+    <br>
+    <form>
+        <div class="name">
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+        </div>
+        <div class="email">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="sub">
+            <label for="subject">Subject: </label>
+            <input type="text" name="subject" id="subject">
+        </div>
+        <div class="message">
+            <label for="message">message: </label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <input type="submit" id="btn">
+    </form>
+</section>
+</div>
+<section class="footerArea">
+    <footer>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+    </footer>
+    </section>
+</body>
+</html>
